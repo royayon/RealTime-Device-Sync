@@ -22,10 +22,5 @@ API
 ---
 The API used for this project [http://35.201.2.209:8000/](http://35.201.2.209:8000/). and in the project the link is referenced by API_URL
 
-
-Node Modules
----
-Node Modules are included for faster zip and running the project.
-
 Cheers 🎉
 ---
