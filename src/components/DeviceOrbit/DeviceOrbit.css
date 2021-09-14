@@ -1,122 +1,132 @@
 body {
-    background-color: #FF7043;
-    min-height: 100vh;
-    overflow-y: hidden;
+  background-color: #FF7043;
+  min-height: 100vh;
+  overflow-y: hidden;
 }
 
 .deviceBody {
-  /* background-color: orangered;
-  min-height: 100vh; */
+/* background-color: orangered;
+min-height: 100vh; */
+}
+.deviceCountBody {
+
 }
 .deviceCount {
-  /* display: inline; */
-  color: #fff;
-  font-weight: lighter;
-  font-size: 50px;
-  position: absolute;
-  left: 50%;
-  top: 32%;
-  transform: translate(-50%, -50%);
+display: inline;
+color: #fff;
+font-weight: lighter;
+font-size: 50px;
+position: absolute;
+left: 50%;
+top: 32%;
+transform: translate(-50%, -50%);
 }
 
 .deviceCount2 {
-    /* display: inline; */
-    color: #fff;
-    position: absolute;
-    font-size: 11px;
-    left: 50%;
-    top: 42%;
-    transform: translate(-50%, -50%);
-  }
-  .deviceCount3 {
-    /* display: inline; */
-    color: #fff;
-    position: absolute;
-    font-size: 11px;
-    left: 50%;
-    top: 44%;
-    transform: translate(-50%, -50%);
-  }
+  display: inline;
+  color: #fff;
+  position: absolute;
+  font-size: 11px;
+  left: 50%;
+  top: 32%;
+  transform: translate(-50%, -50%);
+  margin-top: 35px;
+}
+.deviceCount3 {
+  display: inline;
+  color: #fff;
+  position: absolute;
+  font-size: 11px;
+  left: 50%;
+  top: 32%;
+  transform: translate(-50%, -50%);
+  margin-top: 48px;
+}
 
 .circle {
-  height: 25px;
-  width: 25px;
-  background-color: #fff;
-  border-radius: 50%;
-  display: inline-block;
-  position: absolute;
+height: 40px;
+width: 40px;
+background-color: #fff;
+border-radius: 50%;
+display: inline-block;
+position: absolute;
 }
 
 .orbit1Circle {
-  animation: orbit1 3s infinite linear;
+animation: orbit1 5s infinite linear;
 }
 
 .orbit2Circle {
-  animation: orbit2 3.1s infinite linear;
+animation: orbit2 3.1s infinite linear;
 }
 
 .orbit3Circle {
-  animation: orbit3 3.4s infinite linear;
+animation: orbit3 3.4s infinite linear;
 }
 
 .orbit4Circle {
-  animation: orbit4 3.6s infinite linear;
+animation: orbit4 3.6s infinite linear;
 }
 
 .orbit5Circle {
-  animation: orbit5 3.7s infinite linear;
+animation: orbit5 3.7s infinite linear;
 }
 
 .orbitsContainer {
-  /* display: inline-block; */
-  margin-top: 240px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+display: inline;
+/* margin-top: 240px; */
+/* display: flex; */
+/* flex-direction: column; */
+/* justify-content: center; */
+/* align-items: center; */
+top: 32%;
+left: 49%;
+/* margin-left: auto; */
+position: absolute;
+transform: translate(-50%, -50%);
 }
 
 @keyframes orbit1 {
-  from {
-    transform: rotate(0deg) translateX(100px) rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg) translateX(100px) rotate(-360deg);
-  }
+from {
+  transform: rotate(var(--deg)) translateX(170px) rotate(0deg);
+}
+to {
+  transform: rotate(var(--cdeg)) translateX(170px) rotate(-360deg);
+}
 }
 
 @keyframes orbit2 {
-  from {
-    transform: rotate(72deg) translateX(130px) rotate(-11deg);
-  }
-  to {
-    transform: rotate(432deg) translateX(130px) rotate(-371deg);
-  }
+from {
+  transform: rotate(72deg) translateX(100px) rotate(-11deg);
+}
+to {
+  transform: rotate(432deg) translateX(100px) rotate(-371deg);
+}
 }
 
 @keyframes orbit3 {
-  from {
-    transform: rotate(144deg) translateX(170px) rotate(-140deg);
-  }
-  to {
-    transform: rotate(504deg) translateX(170px) rotate(-500deg);
-  }
+from {
+  transform: rotate(144deg) translateX(100px) rotate(-140deg);
+}
+to {
+  transform: rotate(504deg) translateX(100px) rotate(-500deg);
+}
 }
 
 @keyframes orbit4 {
-  from {
-    transform: rotate(216deg) translateX(200px) rotate(-6deg);
-  }
-  to {
-    transform: rotate(576deg) translateX(200px) rotate(-366deg);
-  }
+from {
+  transform: rotate(216deg) translateX(100px) rotate(-6deg);
+}
+to {
+  transform: rotate(576deg) translateX(100px) rotate(-366deg);
+}
 }
 
 @keyframes orbit5 {
-  from {
-    transform: rotate(280deg) translateX(230px) rotate(84deg);
-  }
-  to {
-    transform: rotate(640deg) translateX(230px) rotate(-276deg);
-  }
+from {
+  transform: rotate(280deg) translateX(100px) rotate(84deg);
+}
+to {
+  transform: rotate(640deg) translateX(100px) rotate(-276deg);
+}
 }
