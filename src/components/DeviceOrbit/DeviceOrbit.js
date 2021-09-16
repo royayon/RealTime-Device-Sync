@@ -31,7 +31,7 @@ export default function DeviceOrbit(props) {
           {angleList.map((value, index) => (
             <span
               className={`orbit1Circle circle`}
-              key={getRandomInt(1, 9999)}
+              key={`${index}-RAND-${getRandomInt(1, 9999)}`}
               style={{
                 "--deg": `${value}deg`,
                 "--cdeg": `${360 + value}deg`,
